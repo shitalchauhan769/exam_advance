@@ -35,7 +35,7 @@ class _DeitalScreenState extends State<DeitalScreen> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SizedBox(
-                height: 100,
+                height: 200,
                 width: MediaQuery.sizeOf(context).width,
                 child: Card(
                   child: Container(
@@ -48,11 +48,14 @@ class _DeitalScreenState extends State<DeitalScreen> {
                           ],
                         ),
                       ),
-                      child: Center(
-                        child: Text(
-                          "${providerW!.resultsList[index].content}",
-                          style: TextStyle(),
-                          textAlign: TextAlign.justify,
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Center(
+                          child: Text(
+                            "${providerW!.resultsList[index].content}",
+                            style: TextStyle(color: Colors.white),
+                            textAlign: TextAlign.justify,
+                          ),
                         ),
                       )),
                 ),
